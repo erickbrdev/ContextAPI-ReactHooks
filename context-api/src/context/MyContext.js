@@ -22,7 +22,7 @@ class Provider extends React.Component {
     }
     return(
       <myContext.Provider value={ contextValue }>
-
+        {this.props.children}
       </myContext.Provider>
     )
   }
