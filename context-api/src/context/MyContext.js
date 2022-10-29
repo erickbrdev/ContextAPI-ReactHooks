@@ -10,15 +10,32 @@ class Provider extends React.Component {
   }
 
   handleClick = () => {
+    const { money } = this.state
     this.setState((prevState) => ({
       money: prevState.money - 100
+    }))
+
+    if(money <= 0) {
+      this.setState({
+        money: 0
+      }) 
+    if(money <= 0) {
+      return alert('Saldo indisponível')
+    }       
+    } 
+  }
+    
+  handleClickDeposit = () => {
+    this.setState((prevState) => ({
+      money: prevState.money + 100
     }))
   }
 
   render(){
     const contextValue = {
       ...this.state,
-      handleClick: this.handleClick
+      handleClick: this.handleClick,
+      handleClickDeposit :this.handleClickDeposit
     }
     return(
       <myContext.Provider value={ contextValue }>
