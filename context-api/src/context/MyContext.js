@@ -19,9 +19,9 @@ class Provider extends React.Component {
       this.setState({
         money: 0
       }) 
-    if(money <= 0) {
-      return alert('Saldo indisponível')
-    }       
+      if(money <= 0) {
+        return alert('Saldo indisponível')
+      }       
     } 
   }
     
