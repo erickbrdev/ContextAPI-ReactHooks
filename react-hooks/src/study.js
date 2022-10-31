@@ -5,6 +5,7 @@ function StudyHooks(){
   const { stateA, setStateA, stateB, setStateB } = useContext(myContext) 
   return(    
     <div>
+      <h2>useContext</h2>
       <p>{stateA}</p>
       <p>{stateB}</p>
       <div>

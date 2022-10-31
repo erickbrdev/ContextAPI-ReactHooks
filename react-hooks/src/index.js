@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Provider from './context/provider';
 import Hooks from './hooks';
 import StudyHooks from './study';
+import Location from './userEffect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +12,7 @@ root.render(
       <StudyHooks />
       <Hooks />
     </Provider>
+      <Location />
   </React.StrictMode>
 );
 

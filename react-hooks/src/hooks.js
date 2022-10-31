@@ -4,8 +4,8 @@ function Hooks() {
   const [counter, setCounter] = useState(0)
   return (
     <div>
-      <h2>Introdução ao useState</h2>
-      <h3>Contador: { counter }</h3>
+      <h2> useState</h2>
+      <p>Contador: { counter }</p>
       <button 
         type="button"
         onClick={() => setCounter(prevState => prevState +1 )}  
