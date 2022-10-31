@@ -4,6 +4,7 @@ function App() {
   const [counter, setCounter] = useState(0)
   return (
     <div>
+      <h2>Introdução ao useState</h2>
       <h3>Contador: { counter }</h3>
       <button 
         type="button"
