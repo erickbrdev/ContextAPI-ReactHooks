@@ -8,15 +8,15 @@ function App() {
       <h3>Contador: { counter }</h3>
       <button 
         type="button"
-        onClick={() => setCounter(counter +1 )}  
+        onClick={() => setCounter(prevState => prevState +1 )}  
       >
-        Adicionar
+        + 1
       </button>
       <button
         type="button"
         onClick={() => setCounter(counter -1)}  
       >
-        Diminuir
+        - 1
       </button>
     </div>
   );
