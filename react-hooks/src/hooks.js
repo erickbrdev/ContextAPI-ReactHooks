@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function App() {
+function Hooks() {
   const [counter, setCounter] = useState(0)
   return (
     <div>
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default Hooks;
