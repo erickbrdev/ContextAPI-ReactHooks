@@ -4,6 +4,7 @@ import { myContext } from '../context/MyContext';
 
 class Component1 extends React.Component {
   render(){  
+    const { money } = this.context
     return(
       <div>      
         <h1>Component1</h1>
